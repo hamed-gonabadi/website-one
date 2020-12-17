@@ -3,7 +3,7 @@
 	<link rel="icon" href="post-3.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-submit form
+submit names
 </title>
 
 </head>
@@ -171,29 +171,33 @@ Name3: <input type="text" class="cadr" name="esm3" placeholder="     enter your 
 	$esm2=$_POST["esm2"] ."<br>";
 	
 	$esm3=$_POST["esm3"] ."<br>";
+		
+	echo ($esm1);<br>
+	echo ($esm2);<br>
+	echo ($esm3);<br>
+		
 	
-	mkdir("esm");
 	
-	$assami=fopen("esm/namha.txt","w") or die("نمیتوانیم فایل را باز کنیم !!");
+// 	$assami=fopen("esm/namha.txt","w") or die("نمیتوانیم فایل را باز کنیم !!");
 	
-	fwrite($assami,$esm1);
-	fwrite($assami,$esm2);
-	fwrite($assami,$esm3);
+// 	fwrite($assami,$esm1);
+// 	fwrite($assami,$esm2);
+// 	fwrite($assami,$esm3);
 	
-	fclose($assami);
+// 	fclose($assami);
 	
-	$assami=fopen("esm/namha.txt","r") or die("نمیتوانیم فایل را باز کنیم !!");
+// 	$assami=fopen("esm/namha.txt","r") or die("نمیتوانیم فایل را باز کنیم !!");
 	
-	while(!feof($assami))
-	{
-		echo fgets($assami);
-	}
+// 	while(!feof($assami))
+// 	{
+// 		echo fgets($assami);
+// 	}
 	
-	fclose($assami);
-	// یا می توان از کد های زیر نیز استفاده کرد
-	// echo readfile("namha.txt");
-	// echo fread($assami,filesize("namha.txt"));
-	}
+// 	fclose($assami);
+// 	// یا می توان از کد های زیر نیز استفاده کرد
+// 	// echo readfile("namha.txt");
+// 	// echo fread($assami,filesize("namha.txt"));
+// 	}
 	?>
 	</div>
 
